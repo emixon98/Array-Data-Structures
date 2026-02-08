@@ -7,6 +7,7 @@ int main(){
 
     int array[100]; //Initializing an array of 100 integers
     cout << "The size of my array is " << sizeof(array) / sizeof(array[0]) << " elements\n";
+    //dividing entire byte size of array by a single elements size to give length of array
 
     //Task 2:
     //The size of each element in an array depends on the context, I will give two approaches
@@ -19,7 +20,7 @@ int main(){
     //Task 5:
     //Thankfully addresses are a key part of C++ and are as easy as typing a single character.
     //By using & followed by our variable name for our array we can reference the location of our array, 
-    //which will point to the first element of the array, which contiguously contains the rest of the elements 
+    //which will point to the entire array, which contiguously contains the rest of the elements 
     //following it.
 
     cout << "Our array resides at " << &array << " which is it's address\n";

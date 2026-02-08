@@ -21,7 +21,7 @@ Insertion at the beginning of the array: N + 1 steps, again where N is the size 
 
 Insertion at the end of the array: 1 step. The opposite of insertion at the beginning. We don't have to shift any elements and can instead simply add our new element to the last index (if considering a dynamic array). In a fixed array this is possible if there is unused space at the end, and still requires only one step.
 
-Deletion at the beginning of the array: Much like insertion, when we delete the first index, we still need to shift everything to the left position once. This means that our steps are N, where N - 1 is the new size of the array and our respective shifts, and the + 1 is our actual deletion.
+Deletion at the beginning of the array: Much like insertion, when we delete the first index, we still need to shift everything to the left position once. This means that our steps are (N - 1) + 1 = N, where N - 1 is the new size of the array and our respective shifts, and the + 1 is our actual deletion.
 
 Deletion at the end of the array: Similar to insertion at the end, we do not need to consider shifting other elements. There is only 1 step required and it is the deletion itself.
 
