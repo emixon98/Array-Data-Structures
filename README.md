@@ -15,6 +15,9 @@ one position, [0], [1], [2]...etc.
 Secondly, the size of an element is also dependent on the data type used, in this case integer. An integer is typically 4 bytes in modern systems, however we can clarify this with the standard library function sizeof(), which I have called in main.
 
 ```
+sizeof(array[0]);
+```
+```
 cout << "The size of an integer in this array is = " << sizeof(array[0]) << " bytes\n";
 ```
 
@@ -42,4 +45,7 @@ Thankfully addresses are a key part of C++ and are as easy as typing a single ch
 
 ```
 cout << "Our array resides at " << &array << " which is it's address\n";
+```
+```
+address = &array;
 ```
