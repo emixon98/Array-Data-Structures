@@ -13,16 +13,19 @@ Secondly, the size of an element is also dependent on the data type used, in thi
 
 Task 3 (Number of steps for the following operations):
 
-Reading:
+Reading: A single step, simply access the index, ex. array[0]
 
-Searching for a value not contained within the array:
+Searching for a value not contained within the array: (Brute Force Search) Potentially N steps, where N is the size of the array. Classically incrementing and comparing each index to desired element.
 
-Insertion at the beginning of the array:
+Insertion at the beginning of the array: N + 1 steps, again where N is the size of the array. The reason for this is not potential anymore, but due to the fact that we hacve to shift all existing index's/elements over 1 to make a new index [0], in which creating that index is our + 1.
 
-Insertion at the end of the array:
+Insertion at the end of the array: The opposite of insertion at the beginning. We don't have to shift any elements and can instead simply add our new element to the last index [-1] (if considering a dynamic array).
 
-Deletion at the beginning of the array:
+Deletion at the beginning of the array: Much like insertion, when we delete the first index, we still need to shift everything to the left position once. This means that our steps are N, where N - 1 is the new size of the array and our respective shifts, and the + 1 is our actual deletion.
 
-Deletion at the end of the array:
+Deletion at the end of the array: Similar to insertion at the end, we do not need to consider shifting other elements. There is only 1 step required and it is the deletion itself.
+
+Task 4 (search for every instance):
 
 
+Task 5 (Finding memory address of an array):
