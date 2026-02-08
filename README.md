@@ -4,7 +4,7 @@
 
 ## Task 1:
 To create an array of 100 elements in C++ you need to declare a datatype (int, double, char, etc.), followed by an identifiable name (much like with a standard variable), attach square brackets to the name, and within the brackets declare a size for the array. In this case 100. 
-```
+```C++
 int array[100]; 
 ```
 
@@ -14,10 +14,10 @@ Firstly, each index of the array can contain an integer, by that definition, eac
 one position, [0], [1], [2]...etc.
 Secondly, the size of an element is also dependent on the data type used, in this case integer. An integer is typically 4 bytes in modern systems, however we can clarify this with the standard library function sizeof(), which I have called in main.
 
-```
+```C++
 sizeof(array[0]);
 ```
-```
+```C++
 cout << "The size of an integer in this array is = " << sizeof(array[0]) << " bytes\n";
 ```
 
@@ -43,9 +43,9 @@ Given an unordered array, if we were asked to find every instance of the word "a
 
 Thankfully addresses are a key part of C++ and are as easy as typing a single character. By using & followed by our variable name for our array we can reference the location of our array, which will point to the entire array, which contiguously contains the rest of the elements following it.
 
-```
+```C++
 cout << "Our array resides at " << &array << " which is it's address\n";
 ```
-```
+```C++
 address = &array;
 ```
