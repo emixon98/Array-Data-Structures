@@ -25,7 +25,7 @@ cout << "The size of an integer in this array is = " << sizeof(array[0]) << " by
 
 Reading: A single step, simply access the index, ex. array[0]
 
-Searching for a value not contained within the array: (Brute Force Search) Potentially N steps, where N is the size of the array. Classically incrementing and comparing each index to desired element.
+Searching for a value not contained within the array: (Brute Force Search) N steps, where N is the size of the array. Classically incrementing and comparing each index to desired element.
 
 Insertion at the beginning of the array: N + 1 steps, again where N is the size of the array. The reason for this is not potential anymore, but due to the fact that we have to shift all existing index's/elements over 1 to make a new index [0], in which inserting that index is our + 1.
 
