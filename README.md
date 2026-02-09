@@ -49,3 +49,6 @@ cout << "Our array resides at " << &array << " which is it's address\n";
 ```C++
 address = &array;
 ```
+
+My Video Covering the Assignment: https://youtu.be/bj0iYqrxiqY
+
